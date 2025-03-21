@@ -59,6 +59,105 @@ Dans le répertoire du projet, exécutez la commande suivante pour construire le
 docker-compose build
 ```
 
+# SLAABX
+
+SLAABX est une plateforme innovante de gestion et d'estimation de cartes de collection (Pokémon, Yu-Gi-Oh!, etc.). Elle permet aux utilisateurs d'ajouter, d'estimer, et d'analyser la valeur de leurs cartes en temps réel.
+
+## Fonctionnalités principales
+
+- **Ajout de cartes** : Ajoutez vos cartes à votre collection avec des informations détaillées.
+- **Estimation de prix** : Obtenez une estimation du prix de chaque carte basée sur les tendances du marché.
+- **Graphiques d'évolution** : Visualisez l'évolution des prix de vos cartes.
+- **Système de notation** : Les utilisateurs peuvent évaluer l'état des cartes.
+- **Authentification sécurisée** : Connexion et gestion des utilisateurs avec JWT.
+- **Mode sombre** : Interface adaptée pour une meilleure expérience utilisateur.
+
+## Technologies utilisées
+
+- **Frontend** : [Next.js](https://nextjs.org/), [DaisyUI](https://daisyui.com/) pour une interface moderne et réactive.
+- **Backend** : [Spring Boot](https://spring.io/projects/spring-boot) pour la gestion des API et des services.
+- **Base de données** : [PostgreSQL](https://www.postgresql.org/) pour le stockage des données.
+- **Gestion de version** : [GitHub](https://github.com/) pour l'hébergement du code et la gestion du versioning.
+- **Conteneurisation** : [Docker](https://www.docker.com/) pour la gestion des environnements.
+
+## Installation
+
+### Prérequis
+
+Avant de commencer, assurez-vous d'avoir installé :
+
+- [Node.js](https://nodejs.org/) (version recommandée : 18.x ou supérieure)
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) (version recommandée : 17)
+- [Docker](https://www.docker.com/) et [Docker Compose](https://docs.docker.com/compose/)
+- [Git](https://git-scm.com/)
+
+### Cloner le projet
+
+```bash
+git clone https://github.com/votre-repo/slaabx.git
+cd slaabx
+```
+
+### Configuration de l'environnement
+
+Créez un fichier `.env` à la racine du projet et ajoutez les variables suivantes :
+
+```env
+# Base de données PostgreSQL
+SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/slaabx
+SPRING_DATASOURCE_USERNAME=your_username
+SPRING_DATASOURCE_PASSWORD=your_password
+
+# Configuration du backend
+SERVER_PORT=8080
+JWT_SECRET=your_secret_key
+```
+
+### Lancer l'application avec Docker
+
+#### 1. Construire les conteneurs
+
+```bash
+docker-compose build
+```
+
+#### 2. Démarrer les services
+
+```bash
+docker-compose up
+```
+
+#### 3. Accéder aux services
+
+- **Frontend (Next.js)** : [http://localhost:3000](http://localhost:3000)
+- **Backend (Spring Boot)** : [http://localhost:8080](http://localhost:8080)
+- **Base de données (PostgreSQL)** : Accessible sur `localhost:5432`
+
+## Versioning
+
+Chaque version de SLAABX sera nommée d'après une planète fictive.
+
+- **v1.0 - Onyx-9** (Première version stable)
+- **v1.1 - Aether-12** (Amélioration des performances)
+- **v2.0 - Xyron-88** (Nouvelles fonctionnalités majeures)
+
+## Contribution
+
+Les contributions sont les bienvenues !
+
+1. Forkez le projet
+2. Créez une branche : `git checkout -b feature/nouvelle-fonctionnalite`
+3. Faites vos modifications et committez : `git commit -m "Ajout d'une nouvelle fonctionnalité"`
+4. Poussez la branche : `git push origin feature/nouvelle-fonctionnalite`
+5. Ouvrez une Pull Request
+
+## License
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+---
+
+**SLAABX** évolue constamment, alors restez à l'affût des mises à jour ! 🚀
 
 
 
