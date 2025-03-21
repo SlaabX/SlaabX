@@ -40,16 +40,37 @@ Avant de commencer, vous devez vous assurer que les outils suivants sont install
 Commencez par cloner le repository sur votre machine locale. Ouvrez un terminal et exécutez les commandes suivantes :
 
 ```bash
-git clone https://github.com/your-username/slaabx.git
+git clone https://github.com/hemza-github/slaabx.git
 cd slaabx
 ```
+
+## 🐳 Configuration de Docker
+
+Le projet utilise Docker pour faciliter l'exécution des services (**frontend, backend, et base de données**).  
+Assurez-vous que **Docker** et **Docker Compose** sont correctement installés sur votre machine.
+
+### 🚀 Construire les conteneurs Docker  
+Dans le répertoire du projet, exécutez la commande suivante pour construire les conteneurs Docker pour :  
+- **Frontend** (Next.js)  
+- **Backend** (Spring Boot)  
+- **Base de données** (PostgreSQL)  
+
+```bash
+docker-compose build
+```
+
+
+
+
+
+
 
 
 ## Installation
 
 1. Clonez le repository :
    ```bash
-   git clone https://github.com/ton-utilisateur/slaabx.git
+   git clone https://github.com/hemza-github/slaabx.git
 Configurez le backend avec Spring Boot :
 bash
 Copier
