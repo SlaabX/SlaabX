@@ -124,6 +124,77 @@ Vous pouvez maintenant accéder au projet via :
 - **Backend (API) ⚙️** : [http://localhost:8080](http://localhost:8080)
 
 
+# 🌱 Gestion des branches (GitFlow)
+
+Notre projet suit le workflow **GitFlow** pour assurer une gestion propre et efficace du code. Voici comment sont organisées les branches :
+
+## 📌 Branches principales
+- **`main`** → Contient le code **stable** et **prêt pour la production**.
+- **`develop`** → Contient le code en **cours de développement**. C'est ici que toutes les nouvelles fonctionnalités sont intégrées avant d'être validées pour la production.
+
+## 🌿 Branches de travail
+- **`feature/*`** → Utilisée pour développer une **nouvelle fonctionnalité**.
+  - 📌 Créée depuis `develop`.
+  - ✅ Fusionnée dans `develop` une fois terminée.
+  - 🏷️ Exemple : `feature/authentification`
+
+- **`hotfix/*`** → Utilisée pour corriger un **bug critique en production**.
+  - 📌 Créée depuis `main`.
+  - ✅ Fusionnée dans `main` et `develop` après correction.
+  - 🏷️ Exemple : `hotfix/fix-paiement`
+
+- **`release/*`** → Utilisée pour préparer une **nouvelle version stable**.
+  - 📌 Créée depuis `develop`.
+  - ✅ Fusionnée dans `main` et `develop` après validation.
+  - 🏷️ Exemple : `release/v1.0.0`
+
+- **`bugfix/*`** → Utilisée pour corriger un **bug non critique**.
+  - 📌 Créée depuis `develop`.
+  - ✅ Fusionnée dans `develop` une fois corrigée.
+  - 🏷️ Exemple : `bugfix/correction-affichage`
+
+## 🚀 Workflow Git standard
+1. **Créer une feature**  
+   ```bash
+   git checkout develop
+   git pull origin develop
+   git checkout -b feature/nom-de-la-feature
+   ```
+
+2. **Pousser la feature sur le dépôt distant**  
+   ```bash
+   git add .
+   git commit -m "Ajout de la fonctionnalité X"
+   git push origin feature/nom-de-la-feature
+   ```
+
+3. **Fusionner la feature dans `develop`** (via une PR ou en local)  
+   ```bash
+   git checkout develop
+   git pull origin develop
+   git merge feature/nom-de-la-feature
+   git push origin develop
+   ```
+
+4. **Supprimer la branche après fusion**  
+   ```bash
+   git branch -d feature/nom-de-la-feature
+   git push origin --delete feature/nom-de-la-feature
+   ```
+
+---
+
+💡 **Rappel important :**  
+- **Ne jamais travailler directement sur `main` ou `develop` !**  
+- Toujours créer des **pull requests** pour fusionner du code.  
+- Bien tester les fonctionnalités avant de les intégrer.  
+
+🔗 **Ressources utiles :**  
+- [GitFlow Explained](https://nvie.com/posts/a-successful-git-branching-model/)  
+- [Git Cheat Sheet](https://www.git-tower.com/blog/git-cheat-sheet/)
+
+
+
 ## 💎 Versioning
 
 Nous utilisons un système de versionnement en quatre niveaux :
