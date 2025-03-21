@@ -42,6 +42,8 @@ Commencez par cloner le repository sur votre machine locale. Ouvrez un terminal 
 ```bash
 git clone https://github.com/your-username/slaabx.git
 cd slaabx
+```
+
 
 ## Installation
 
