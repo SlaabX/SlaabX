@@ -6,9 +6,12 @@ SLAABX est une plateforme innovante permettant aux collectionneurs de cartes (Po
 
 - 🃏 **Gestionnaire de cartes** : Ajoutez vos cartes à votre collection avec des informations détaillées.
 - 📊 **Graphiques d'évolution** : Visualisez l'évolution des prix de vos cartes.
+- 🌙 **Mode sombre** : Interface adaptée pour une meilleure expérience utilisateur.
 - ⭐ **Système de gradation** : Les utilisateurs peuvent évaluer l'état des cartes entre eux.
 - 🔒 **Authentification sécurisée** : Connexion et gestion des utilisateurs avec JWT.
-- 🌙 **Mode sombre** : Interface adaptée pour une meilleure expérience utilisateur.
+- 🛒 **Vente et achat de cartes** : Achetez et vendez vos cartes en toute sécurité via la plateforme.
+- 🚚 **Système de livraison** : Expédition des cartes dans toute l'Europe via des API partenaires.(Peut etre le Japon??)
+- ...
 
 ## 🛠 Technologies utilisées
 
