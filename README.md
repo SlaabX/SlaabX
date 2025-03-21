@@ -4,18 +4,44 @@
 
 ## Fonctionnalités principales
 
-- **Gestion de collection** : Les utilisateurs peuvent ajouter, supprimer et modifier des cartes dans leur collection personnelle.
-- **Estimation des cartes** : Le système permet aux utilisateurs d'estimer la valeur de leurs cartes basées sur les tendances du marché.
-- **Graphiques des prix** : Suivi de l'évolution des prix des cartes, avec des graphiques dynamiques.
-- **Système de notation et d'avis** : Les utilisateurs peuvent noter les cartes et laisser des avis pour aider à l'évaluation des cartes.
-- **Authentification sécurisée** : Inscription, connexion et gestion du profil avec des technologies sécurisées comme JWT et Spring Boot.
+- **Gestion de collection** : Les utilisateurs peuvent ajouter, modifier et supprimer des cartes dans leur collection personnelle.
+- **Estimation des cartes** : Évaluation dynamique de la valeur des cartes en fonction des tendances du marché et de la demande.
+- **Suivi des prix** : Visualisation des historiques de prix des cartes à travers des graphiques interactifs.
+- **Notation et avis** : Les utilisateurs peuvent donner des notes et laisser des avis sur les cartes pour aider à leur évaluation.
+- **Marché d'échange** : Possibilité de vendre, acheter ou échanger des cartes avec d'autres utilisateurs via un système sécurisé.
+- **Authentification sécurisée** : Inscription, connexion et gestion de profil avec des technologies de sécurité avancées comme JWT et Spring Boot.
+- **Notifications** : Les utilisateurs peuvent recevoir des alertes sur la valeur des cartes de leur collection ou des opportunités de marché.
+- **Recherche et filtres** : Recherche rapide de cartes par type, valeur, popularité et autres critères avec des filtres personnalisables.
 
 ## Technologies utilisées
 
-- **Frontend** : [Next.js](https://nextjs.org/), [DaisyUI](https://daisyui.com/) pour une interface moderne et réactive.
-- **Backend** : [Spring Boot](https://spring.io/projects/spring-boot) pour la gestion des API et des services.
-- **Base de données** : [PostgreSQL](https://www.postgresql.org/) pour le stockage des données.
-- **Gestion de version** : [GitHub](https://github.com/) pour l'hébergement du code et la gestion du versioning.
+- **Frontend** : [Next.js](https://nextjs.org/) pour une interface utilisateur moderne, rapide et réactive, avec le support du rendu côté serveur (SSR).
+- **Design UI** : [DaisyUI](https://daisyui.com/) pour des composants pré-construits et une intégration facile avec Tailwind CSS, offrant une interface épurée et fonctionnelle.
+- **Backend** : [Spring Boot](https://spring.io/projects/spring-boot) pour construire des APIs robustes et sécurisées, avec des intégrations pour la gestion des utilisateurs et des services.
+- **Base de données** : [PostgreSQL](https://www.postgresql.org/) pour une base de données relationnelle puissante, avec une prise en charge des transactions complexes et des performances élevées.
+- **Sécurisation** : [Spring Security](https://spring.io/projects/spring-security) pour une gestion sécurisée de l'authentification et de l'autorisation des utilisateurs.
+- **Conteneurisation** : [Docker](https://www.docker.com/) pour faciliter le déploiement de l'application dans des environnements isolés et reproductibles.
+- **Gestion de version** : [GitHub](https://github.com/) pour l'hébergement du code, la gestion des versions et la collaboration via les Pull Requests et Issues.
+
+## Installation
+
+### Prérequis
+
+Avant de commencer, vous devez vous assurer que les outils suivants sont installés sur votre machine :
+
+- **[Git](https://git-scm.com/)** : Outil de gestion de version pour cloner et gérer le repository.
+- **[Docker](https://www.docker.com/get-started)** : Outil de conteneurisation pour exécuter l'application et sa base de données dans des environnements isolés.
+- **[Node.js](https://nodejs.org/)** : Environnement d'exécution JavaScript nécessaire pour le frontend (Next.js).
+- **[Java JDK 11+](https://adoptopenjdk.net/)** : Nécessaire pour exécuter le backend (Spring Boot).
+- **[PostgreSQL](https://www.postgresql.org/)** : Système de gestion de base de données relationnelle utilisé pour stocker les données. Vous pouvez également utiliser Docker pour exécuter PostgreSQL.
+
+### Cloner le repository
+
+Commencez par cloner le repository sur votre machine locale. Ouvrez un terminal et exécutez les commandes suivantes :
+
+```bash
+git clone https://github.com/your-username/slaabx.git
+cd slaabx
 
 ## Installation
 
