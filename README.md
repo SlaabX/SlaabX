@@ -87,17 +87,4 @@ Modifier
 - **Contribuer** : Des instructions pour les autres développeurs qui souhaitent contribuer au projet.
 - **License** : Mention de la licence MIT, que tu peux modifier si nécessaire.
 
-Tu peux simplement copier ce texte et l'ajouter dans ton fichier `README.md` sur GitHub.
-
-
-
-
-
-
-
-
-
-
-
-Rechercher
 
